@@ -1,6 +1,8 @@
 import React from "react";
-
+import { useNavigate, Link} from "react-router-dom";
+import Detail from "./Detail";
 function Card() {
+  const navigate = useNavigate()
   return (
     <>
       <div className="mt-3 flex justify-evenly flex-wrap flex-col md:flex-row">
@@ -16,7 +18,7 @@ function Card() {
               <p className="font-bold uppercase tracking-wide">Gym Name</p>
               <p className="text-grey-200 font-semibold mt-1">Short Description about the gym</p>
               <div className="font-bold w-full text-center hover:text-blue-500 cursor-pointer">
-                See Details
+                 <Link onClick={()=>navigate("/details")}>See Details</Link>
               </div>
             </div>
           </div>

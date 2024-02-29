@@ -15,12 +15,14 @@ import About from "./Pages/About.jsx";
 import ContactUs from "./Pages/ContactUs.jsx";
 import Login from "./Pages/Login.jsx";
 import Register from "./Pages/Register.jsx";
+import Detail from "./Components/Detail.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
       <Route path="/" element={<App />}>
         <Route path="" element={<Home />} />
+        <Route path="details" element={<Detail/>}/>
         <Route path="/blog" element={<Blog />} />
         <Route path="/career" element={<Career />} />
         <Route path="/about" element={<About />} />
@@ -34,8 +36,7 @@ const router = createBrowserRouter(
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    {/* <App /> */}
     <RouterProvider router={router} />
-    {/* <Login/> */}
+    {/* <App/> */}
   </React.StrictMode>
 );
