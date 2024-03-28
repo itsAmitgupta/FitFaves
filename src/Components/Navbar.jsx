@@ -10,7 +10,7 @@ function Navbar() {
   return (
     <>
     <div> 
-        <nav className='w-full relative md:h-20 flex justify-between bg-slate-700 text-white items-center'>
+        <nav className='w-full relative z-20 md:h-20 flex justify-between bg-slate-700 text-white items-center'>
             <div> <p className='text-3xl px-3'>FitFeves</p> </div>
         {toggle ? <>
             <div className='flex flex-col absolute bg-slate-700 top-9 w-screen h-screen gap-2'>
